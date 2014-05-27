@@ -1,6 +1,7 @@
 /* CSS for Typography Asset */
 body{
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 .logo{
