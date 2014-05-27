@@ -1,11 +1,11 @@
 #welcome{
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 0;
   left: calc(50% - 480px);
   background-color: rgba(25, 25, 25, 0.8);
   color: #FFFFFF;
-  border: 0.618em solid rgba(255, 255, 255, 0.7);
+  border: 0.618em solid #FFFFFF;
   padding-bottom: 2.618em;
 }
 
@@ -19,7 +19,14 @@
 
 #welcome button{
   display: block;
-  margin: 0 auto;
+}
+
+.enable-camera{
+  background-color: #DC3522;
+}
+
+.hide-modal{
+  background-color: #374140;
 }
 /* #Tablet (Portrait)
 ================================================== */

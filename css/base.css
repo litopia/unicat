@@ -113,11 +113,6 @@ a:hover {
     outline: 0;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c19a380412655e7d8f2b2a4a00a4efe1ea768df5
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -509,4 +504,15 @@ body{
   font-weight: 400;
   line-height: 1.45;
   color: #333;
+}
+
+button{
+  margin: 0.618em auto;
+  width: 11.09em;
+  padding: 1em 0.328em;
+  color: #FFFFFF;
+  border: none;
+  -webkit-border-radius: 0.618em;
+  -moz-border-radius: 0.618em;
+  border-radius: 0.618em;
 }
