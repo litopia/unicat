@@ -1,0 +1,56 @@
+#welcome{
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 480px);
+  background-color: rgba(25, 25, 25, 0.8);
+  color: #FFFFFF;
+  border: 0.618em solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 2.618em;
+}
+
+#welcome .title{
+  margin-bottom: 0;
+}
+
+#welcome p{
+  margin: 1.618em 0;
+}
+
+#welcome button{
+  display: block;
+  margin: 0 auto;
+}
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px){
+      #welcome{
+        left: calc(50% - 400px);
+      }
+    }
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+      #welcome{
+        left: calc(50% - 186px);
+        padding: 0 1.618em 2.618em 1.618em;
+      }
+    }
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      #welcome{
+        left: calc(50% - 246px)
+      }
+    }
