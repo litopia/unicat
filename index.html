@@ -15,18 +15,25 @@
         <link rel="stylesheet" href="css/camera.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+        <script>
+          $('.test').click({
+            $('.camera').toggleClass('show');
+          });
+        </script>
+
         <!-- Import Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lato|Lobster' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
-          <h1><a class="logo title" href="#" role="logo">
+          <h1 class="test"><a class="logo" href="#" role="logo">
             Glimpse
           </a></h1>
         </header>
-
-          <div id="camera">
-            Camera
+          <div id="fade">
+            <div class="camera">
+              Camera
+            </div>
           </div>
 
         <section id="welcome">
@@ -119,7 +126,7 @@
             </nav>
           </footer>
         </main>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
