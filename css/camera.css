@@ -1,0 +1,8 @@
+#camera {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: #313131;
+	opacity: 0.5;
+	position: absolute;
+}

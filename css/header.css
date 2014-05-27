@@ -1,0 +1,10 @@
+header {
+	width: 100%;
+	padding: 5px;
+	background-color: #313131;
+}
+
+h1 a.logo {
+	color: white;
+	text-decoration: none;
+}
