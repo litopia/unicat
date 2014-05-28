@@ -28,20 +28,20 @@
     <body>
 
         <header>
-          <h1><a class="logo" href="#" role="logo">
-            Glimpse
-          </a></h1>
-          <button class="test">Click the shit out of me!</button>
+          <div class="container">
+            <h1><a class="logo test" href="#" role="logo">
+              Glimpse
+            </a></h1>
+            </div>
         </header>
           <div class="camera">
-            <video id="video" width="640" height="480" autoplay></video>
-            <button id="snap">Snap Photo</button>
-            <canvas id="canvas" width="640" height="480"></canvas>
+            <video id="video" width="514" height="514" autoplay></video>
+            <button id="button"><span class="icon-camera">&nbsp;</span></button>
           </div>
 
           <div class="camera">Camera</div>
 
-        <section id="welcome" class="container">
+          <section id="welcome" class="container">
 
           <h1 class="title">
             Welcome to Glimpse
@@ -55,8 +55,9 @@
         </section>
 
         <main class="content">
-          <figure class="content-image">
-            <img src="images/image_01.jpg">
+          <figure class="content-image new-image">
+            <div id="canvasHolder"></div>
+            <img id="preview" src="http://www.clker.com/cliparts/A/Y/O/m/o/N/placeholder-hi.png" width="160" height="120" />
           </figure>
           <figure class="content-image">
             <img src="images/image_02.jpg">
@@ -225,9 +226,11 @@
         <script>
           $(document).ready(function(){
             $('.test').click(function(){
-              $('.camera').toggleClass( 'show' );
+              $( '.camera' ).toggleClass( 'show' );
             });
           });
+
+
         </script>
         <script src="js/camera.js"></script>
     </body>

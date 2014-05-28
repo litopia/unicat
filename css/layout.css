@@ -21,21 +21,29 @@
 ================================================== */
 main {
 	background-color: #343434;
+	padding-top: 40px;
 }
 
-
 img {
-	width: 257px;
-	height: 257px;
-	margin: auto;
+	width: 100%;
+	height: auto;
 }
 
 .content {
-  display: inline-flex;
-  align-content: center;
-	justify-content: center;
+	display: inline-flex;
 	flex-wrap: wrap;
-	margin: auto;
+	align-content: center;
+	justify-content: center;
+}
+
+.content-image {
+	width: 257px;
+	height: 257px;
+	margin: .15%;
+}
+
+.test {
+	display: inline-block;
 }
 
 /* #Media Queries
@@ -45,10 +53,20 @@ img {
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.content-image {
+			width: 192px;
+			height: 192px;
+		}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		.content-image {
+			width: 152px;
+			height: 152px;
+		}
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}

@@ -10,21 +10,29 @@
 }*/
 
 .camera {
-    display: none; /* ensures it’s invisible until it’s called */
+    top: -700px; /* ensures it’s invisible until it’s called */
     position: absolute; /* makes the div go into a position that’s absolute to the browser viewing area */
     left: calc(50% - 250px); /* positions the div half way horizontally */
     /*top: 16.75%;*/ /* positions the div half way vertically */
     padding: 25px;
-    background-color: #313131;
-    opacity: 0.7;
+    background-color: rgba(25, 25, 25, 0.8);
     width: 500px;
-    z-index: 99; /* makes the div the top layer, so it’ll lay on top of the other content */
+    z-index: 50; /* makes the div the top layer, so it’ll lay on top of the other content */
+   	-moz-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-ms-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-o-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-webkit-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	transition:all 350ms cubic-bezier(.42,0,.58,1);
 }
 
 .show {
-	display: block;
+	top: 79px;
 }
 
-.test {
+#canvasHolder {
+	display: none;
+}
+
+.visible {
 	display: inline-block;
 }
