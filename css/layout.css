@@ -25,8 +25,9 @@ img {
     }
 
 .flex {
-	width: 100%;
-	display: flex;
+	width: 257px;
+	height: 257px;
+	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
