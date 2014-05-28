@@ -21,6 +21,7 @@
         addEventListener("load", setup);
 
         function captureImage() {
+            appendImg();
             var canvas = document.createElement('canvas');
             canvas.id = 'hiddenCanvas';
             //add canvas to the body element
@@ -28,8 +29,8 @@
             //add canvas to #canvasHolder
             document.getElementById('canvasHolder').appendChild(canvas);
             var ctx = canvas.getContext('2d');
-            canvas.width = video.videoWidth / 4;
-            canvas.height = video.videoHeight / 4;
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             //save canvas image as data url
             dataURL = canvas.toDataURL();
@@ -37,6 +38,19 @@
             document.getElementById('preview').src = dataURL;
             // place the image value in the text box
             document.getElementById('imageToForm').value = dataURL;
+        }
+
+        function appendImg(){
+          var main = document.getElementById('main');
+          var newImg = document.createElement('figure');
+          var canvasHolder = document.createElement('div')
+          var preview = document.createElement('img');
+          newImg.className="content-image";
+          canvasHolder.id = "canvasHolder";
+          preview.id = "preview";
+          newImg.appendChild(canvasHolder);
+          newImg.appendChild(preview);
+          main.insertBefore(newImg, main.firstChild);
         }
 
         //Bind a click to a button to capture an image from the video stream
