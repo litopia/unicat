@@ -12,11 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" type="text/css" href="css/skeleton.css">
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/camera.css">
-        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" type="text/css" href="css/modal.css">
         <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
@@ -29,17 +29,18 @@
 
         <header>
           <div class="container">
-            <h1><a class="logo test" href="#" role="logo">
+            <h1><a class="logo three columns" href="#" role="logo">
               Glimpse
             </a></h1>
-            </div>
+            <a class="test offset-by-one one column" href="#"><span class="icon-camera">&nbsp;</span></a>
+          </div>
         </header>
           <div class="camera">
             <video id="video" width="514" height="514" autoplay></video>
             <button id="button"><span class="icon-camera">&nbsp;</span></button>
           </div>
 
-          <div class="camera">Camera</div>
+          <div id="camera "class="camera">Camera</div>
 
           <section id="welcome" class="container">
 

@@ -37,6 +37,8 @@
             document.getElementById('preview').src = dataURL;
             // place the image value in the text box
             document.getElementById('imageToForm').value = dataURL;
+            //minimize camera
+            // document.getElementById('camera').removeAttribute('show');
         }
 
         //Bind a click to a button to capture an image from the video stream
