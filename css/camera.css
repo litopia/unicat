@@ -14,7 +14,7 @@
     position: absolute; /* makes the div go into a position that’s absolute to the browser viewing area */
     left: calc(50% - 250px); /* positions the div half way horizontally */
     /*top: 16.75%;*/ /* positions the div half way vertically */
-    padding: 25px; 
+    padding: 25px;
     background-color: #313131;
     opacity: 0.7;
     width: 500px;
@@ -28,4 +28,3 @@
 .test {
 	display: inline-block;
 }
-
