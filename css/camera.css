@@ -29,6 +29,12 @@
 	top: 79px;
 }
 
-.test {
+#canvasHolder {
+	display: none;
 }
+
+.visible {
+	display: inline-block;
+}
+
 

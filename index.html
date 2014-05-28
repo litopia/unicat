@@ -36,7 +36,7 @@
         </header>
           <div class="camera">
             <video id="video" width="514" height="514" autoplay></video>
-            <button id="snap"><span class="icon-camera">&nbsp;</span></button>
+            <button id="button"><span class="icon-camera">&nbsp;</span></button>
           </div>
 
           <div class="camera">Camera</div>
@@ -54,15 +54,10 @@
           <menu class="hide-modal icon-circle-cross"></menu>
         </section>
 
-        <main>
-<!--           <figure class="flex">
-            <canvas id="canvas" width="640" height="480"></canvas>
-            <figcaption>
-              img1
-            </figcaption> -->
         <main class="content">
-          <figure class="content-image">
-            <img src="images/image_01.jpg">
+          <figure class="content-image new-image">
+            <div id="canvasHolder"></div>
+            <img id="preview" src="http://www.clker.com/cliparts/A/Y/O/m/o/N/placeholder-hi.png" width="160" height="120" />
           </figure>
           <figure class="content-image">
             <img src="images/image_02.jpg">
@@ -231,9 +226,11 @@
         <script>
           $(document).ready(function(){
             $('.test').click(function(){
-              $('.camera').toggleClass( 'show' );
+              $( '.camera' ).toggleClass( 'show' );
             });
           });
+
+
         </script>
         <script src="js/camera.js"></script>
     </body>
