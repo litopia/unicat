@@ -1,7 +1,9 @@
 header {
 	width: 100%;
 	background-color: #313131;
-	z-index: 100
+	z-index: 100;
+	padding: 5px;
+	position: absolute;
 }
 
 h1 a.logo {

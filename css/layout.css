@@ -21,6 +21,7 @@
 ================================================== */
 main {
 	background-color: #343434;
+	padding-top: 40px;
 }
 
 
@@ -36,6 +37,10 @@ img {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: auto;
+}
+
+.test {
+	display: inline-block;
 }
 
 /* #Media Queries
