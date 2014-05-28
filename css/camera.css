@@ -15,14 +15,14 @@
     left: calc(50% - 250px); /* positions the div half way horizontally */
     /*top: 16.75%;*/ /* positions the div half way vertically */
     padding: 25px; 
-    background-color: #313131;
-    opacity: 0.7;
+    background-color: rgba(25, 25, 25, 0.8);
     width: 500px;
     z-index: 99; /* makes the div the top layer, so it’ll lay on top of the other content */
 }
 
 .show {
 	display: block;
+	transition: .2s;
 }
 
 .test {
