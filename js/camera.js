@@ -30,8 +30,8 @@
             //add canvas to #canvasHolder
             document.getElementById('canvasHolder').appendChild(canvas);
             var ctx = canvas.getContext('2d');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
+            canvas.width = video.videoWidth / 4;
+            canvas.height = video.videoHeight / 4;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             //save canvas image as data url
             dataURL = canvas.toDataURL();
