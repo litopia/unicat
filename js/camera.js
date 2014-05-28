@@ -18,7 +18,8 @@
 
         function error(e) { console.log(e); }
 
-        addEventListener("load", setup);
+        var openCam = document.getElementById('open-cam');
+        openCam.addEventListener("click", setup);
 
         function captureImage() {
             var canvas = document.createElement('canvas');
@@ -36,10 +37,16 @@
             //set preview image src to dataURL
             document.getElementById('preview').src = dataURL;
             // place the image value in the text box
-            document.getElementById('imageToForm').value = dataURL;
-            //minimize camera
-            // document.getElementById('camera').removeAttribute('show');
+            document.getElementById('preview').value = dataURL;
+            hideCam();
         }
+
+        function hideCam(){
+          var cam = document.getElementById('cam-js');
+          cam.classList.remove('show')
+
+        }
+
 
         //Bind a click to a button to capture an image from the video stream
         var el = document.getElementById("button");
