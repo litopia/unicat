@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/camera.css">
         <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/modal.css">
         <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -35,13 +36,16 @@
             <a id="cam-toggle" class="test offset-by-three one column" href="#"><span class="icon-camera" hidden>&nbsp;</span></a>
           </div>
         </header>
-          <div id="cam-js" class="camera">
-            <video id="video" width="514" height="514" autoplay></video>
-            <button id="button"><span class="icon-camera">&nbsp;</span></button>
-          </div>
+        <!-- CANVAS -->
+        <div id="cam-js" class="camera">
+          <!-- VIDEO -->
+          <video id="video" width="514" height="514" autoplay></video>
+          <!-- BUTTON -->
+          <button id="button" ><span class="icon-camera">&nbsp;</span></button>
+        </div>
 
-          <section id="welcome" class="container">
-
+        <!-- WELCOME -->
+        <section id="welcome" class="container">
           <h1 class="title">
             Welcome to Glimpse
           </h1>
@@ -53,6 +57,7 @@
           <menu class="hide-modal icon-circle-cross"></menu>
         </section>
 
+        <!-- START FLOW -->
         <main id="main" class="content">
           <figure class="content-image">
             <img src="images/image_02.jpg">

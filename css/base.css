@@ -503,3 +503,16 @@ button{
   -moz-border-radius: 0.618em;
   border-radius: 0.618em;
 }
+
+#button {
+  background-color: green;
+  width: 100%;
+  padding: 0.5em 0.328em;
+  color: #FFFFFF;
+  border: none;
+  -webkit-border-radius: 0.618em;
+  -moz-border-radius: 0.618em;
+  border-radius: 0.618em;
+  font-size: 2em;
+  margin: 0 auto;
+}
