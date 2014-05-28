@@ -30,20 +30,23 @@
 
         <header>
           <div class="container">
-            <h1><a class="logo test" href="#" role="logo">
-              Glimpse
-            </a></h1>
-            </div>
-        </header>
-          <div class="camera">
-            <video id="video" width="514" height="514" autoplay></video>
-            <button id="button"><span class="icon-camera">&nbsp;</span></button>
+            <h1>
+              <a class="logo test" href="#" role="logo"> Glimpse</a>
+            </h1>
+
+            <a id="cam-toggle" class="test offset-by-four one column" href="#"><span class="icon-camera">&nbsp;</span></a>
           </div>
-
-          <div class="camera">Camera</div>
-
-          <section id="welcome" class="container">
-
+        </header>
+        <!-- CANVAS -->
+        <div id="cam-js" class="camera">
+          <!-- VIDEO -->
+          <video id="video" width="514" height="514" autoplay></video>
+          <!-- BUTTON -->
+          <button id="button" ><span class="icon-camera">&nbsp;</span></button>
+        </div>
+        
+        <!-- WELCOME -->
+        <section id="welcome" class="container">
           <h1 class="title">
             Welcome to Glimpse
           </h1>
@@ -55,11 +58,8 @@
           <menu class="hide-modal icon-circle-cross"></menu>
         </section>
 
-        <main class="content">
-          <figure class="content-image new-image">
-            <div id="canvasHolder"></div>
-            <img id="preview" src="http://www.clker.com/cliparts/A/Y/O/m/o/N/placeholder-hi.png" width="160" height="120"/>
-          </figure>
+        <!-- START FLOW -->
+        <main id="main" class="content">
           <figure class="content-image">
             <img src="images/image_02.jpg">
           </figure>

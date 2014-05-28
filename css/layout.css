@@ -30,8 +30,8 @@ body {
 }
 
 img {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 
 .content {
@@ -44,7 +44,7 @@ img {
 .content-image {
 	width: 257px;
 	height: 257px;
-	margin: .15%;
+	overflow: hidden;
 }
 
 .test {
