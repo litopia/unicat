@@ -30,7 +30,7 @@
 	top: 79px;
 }
 
-#canvasHolder, .hide {
+#canvasHolder {
 	display: none;
 }
 
