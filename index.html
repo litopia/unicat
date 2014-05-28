@@ -32,9 +32,10 @@
           <button class="test">Click the shit out of me!</button>
         </header>
           <div class="camera">
-            Camera
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="snap">Snap Photo</button>
+            <canvas id="canvas" width="640" height="480"></canvas>
           </div>
-
         <section id="welcome" class="container">
           <h1 class="title">
             Welcome to Glimpse
@@ -367,5 +368,6 @@
             });
           });
         </script>
+        <script src="js/camera.js"></script>
     </body>
 </html>
