@@ -12,8 +12,9 @@
 .camera {
     top: -700px; /* ensures it’s invisible until it’s called */
     position: absolute; /* makes the div go into a position that’s absolute to the browser viewing area */
-    left: calc(50% - 250px); /* positions the div half way horizontally */
+    left: calc(50% - 275px); /* positions the div half way horizontally */
     /*top: 16.75%;*/ /* positions the div half way vertically */
+    max-width: 514px;
     padding: 25px;
     background-color: rgba(25, 25, 25, 0.8);
     width: 500px;
@@ -33,6 +34,6 @@
 	display: none;
 }
 
-.visible {
-	display: inline-block;
+video {
+	height: 100%;
 }

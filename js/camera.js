@@ -18,8 +18,11 @@
 
         function error(e) { console.log(e); }
 
-        var openCam = document.getElementById('open-cam');
+        var openCam = document.getElementById("open-cam");
         openCam.addEventListener("click", setup);
+        
+        var camToggle = document.getElementById("cam-toggle");
+        camToggle.addEventListener("click", setup);
 
         function captureImage() {
             appendImg();
@@ -30,8 +33,8 @@
             //add canvas to #canvasHolder
             document.getElementById('canvasHolder').appendChild(canvas);
             var ctx = canvas.getContext('2d');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
+            canvas.width = video.videoWidth / 2;
+            canvas.height = video.videoHeight / 2;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
             //save canvas image as data url
             dataURL = canvas.toDataURL();
