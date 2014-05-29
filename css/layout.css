@@ -20,9 +20,14 @@
 /* #Page Styles
 ================================================== */
 
+header {
+	position: fixed;
+	top: 0;
+	height: 5%;
+}
+
 main {
 	background-color: #343434;
-	padding-top: 10%;
 	width: 100%;
 }
 
