@@ -43,6 +43,7 @@ video {
 #preview{
   -webkit-animation:insertImg 500ms; /* Safari and Chrome */
   animation:insertImg 500ms;
+  max-height: 
 }
 
 @keyframes insertImg
