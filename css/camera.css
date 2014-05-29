@@ -34,6 +34,11 @@
 	display: none;
 }
 
+#cam-js {
+	width: 100%;
+	height: auto;
+}
+
 video {
 	width: 505px;
 	margin: 0 auto;
@@ -52,7 +57,7 @@ video {
   to{height: 30%;}
 }
 
-@-webkit-keyframes insertImg /* Safari and Chrome */
+@-webkit-keyframes insertImg (/* Safari and Chrome */)
 {
   from{height:0;}
   to{height: 30%;}
