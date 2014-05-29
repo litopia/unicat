@@ -9,6 +9,7 @@ $(".hide-modal").click(function(){
 });
 
 $(".enable-camera").click(function(){
+  // $("#cam-toggle .icon-camera").removeAttr("hidden");
 	$("#welcome").attr("hidden", "true");
   $('.camera').toggleClass( 'show' );
 });
