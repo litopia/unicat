@@ -21,8 +21,8 @@
 ================================================== */
 main {
 	background-color: #343434;
-	padding-top: 50px;
 	height: auto;
+	margin-top: 50px;
 }
 
 body {
