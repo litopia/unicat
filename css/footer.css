@@ -27,4 +27,5 @@ footer li a {
 
 footer li a:hover {
   text-decoration: underline;
+  font-family: "Lato";
 }
