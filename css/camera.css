@@ -19,7 +19,7 @@
     background-color: rgba(25, 25, 25, 0.8);
     width: 500px;
     z-index: 50; /* makes the div the top layer, so it’ll lay on top of the other content */
-   	-moz-transition:all 350ms cubic-bezier(.42,0,.58,1);
+  -moz-transition:all 350ms cubic-bezier(.42,0,.58,1);
 	-ms-transition:all 350ms cubic-bezier(.42,0,.58,1);
 	-o-transition:all 350ms cubic-bezier(.42,0,.58,1);
 	-webkit-transition:all 350ms cubic-bezier(.42,0,.58,1);

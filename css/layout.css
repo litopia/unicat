@@ -19,9 +19,11 @@
 
 /* #Page Styles
 ================================================== */
+
 main {
   background-color: #343434;
-  padding-top: 50px;
+  padding-top: 10%;
+  width: 100%;
   height: auto;
 }
 
@@ -30,8 +32,8 @@ body {
 }
 
 img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .content {
@@ -41,18 +43,9 @@ img {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .content-image {
-  width: 257px;
-  height: 257px;
   overflow: hidden;
 }
 
@@ -63,27 +56,31 @@ img {
 /* #Media Queries
 ================================================== */
 
+
   /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) {}
+  @media only screen {
+    .content-image {
+      width: 16.667%;
+      height: 16.667%;
+    }
+
+  }
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .content-image {
-      width: 192px;
-      height: 192px;
-      margin: .2%;
+      width: 20%;
+      height: 20%;
     }
   }
 
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
     .content-image {
-      width: 152px;
-      height: 152px;
-      margin: .35%;
+      width: 33.333%;
+      height: 33.333%;
     }
   }
-
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
   @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
