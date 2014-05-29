@@ -39,8 +39,6 @@ video {
 }
 
 #preview{
-  width: auto;
-  height: 100%;
   -webkit-animation:insertImg 500ms; /* Safari and Chrome */
   animation:insertImg 500ms;
 }
