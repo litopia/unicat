@@ -37,3 +37,20 @@
 video {
 	height: 100%;
 }
+
+#preview{
+  -webkit-animation:insertImg 500ms; /* Safari and Chrome */
+  animation:insertImg 500ms;
+}
+
+@keyframes insertImg
+{
+  from{height:0;}
+  to{height: 100%;}
+}
+
+@-webkit-keyframes insertImg /* Safari and Chrome */
+{
+  from{height:0;}
+  to{height: 100%;}
+}
