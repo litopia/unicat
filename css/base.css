@@ -417,6 +417,7 @@ html input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
+    -moz-box-sizing: border-box;
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
     *height: 13px; /* 3 */
@@ -431,8 +432,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -moz-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
 }
 
@@ -500,8 +500,6 @@ button{
   padding: 1em 0.328em;
   color: #FFFFFF;
   border: none;
-  -webkit-border-radius: 0.618em;
-  -moz-border-radius: 0.618em;
   border-radius: 0.618em;
 }
 
@@ -511,35 +509,36 @@ button{
   padding: 0.5em 0.328em;
   color: #FFFFFF;
   border: none;
-  -webkit-border-radius: 0.618em;
-  -moz-border-radius: 0.618em;
   border-radius: 0.618em;
   font-size: 2em;
   margin: 0 auto;
 }
-footer, ul {
-  width: 35%;
-  margin: auto;
-  padding: .5em;
-  text-align: center;
-  color: white;
+
+/*  a:visited { 
+    color: white; 
+    text-decoration: none; 
   }
 
-  li{
-    list-style: none;
-    text-align: center;
+  a:focus, 
+  a:hover, 
+  a:active { 
+    color: white; 
+    text-decoration: none; 
   }
 
-    a, a:visited { color: white; text-decoration: none; }
-  a:focus, a:hover, a:active { color: white; text-decoration: none; }
-  a:hover { background-color: rgba(white, 0.9); }
+  a:hover { 
+    background-color: rgba(white, 0.9); 
+  }
+
   a {
     float: left;
     display: inline-block;
-    border: 1px solid white;
     font-size: 1em;
     font-family: "Lato";
     text-align: center;
     padding: .5em;
     margin-bottom: 0.625em;
-  }
+  }*/
+
+
+

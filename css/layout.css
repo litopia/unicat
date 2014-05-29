@@ -24,7 +24,6 @@ main {
 	background-color: #343434;
 	padding-top: 10%;
 	width: 100%;
-	height: auto;
 }
 
 body {
@@ -37,7 +36,11 @@ img {
 }
 
 .content {
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
