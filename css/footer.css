@@ -1,0 +1,30 @@
+footer {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  padding: 10px;
+}
+
+footer ul {
+  width: 35%;
+  margin: auto;
+  padding: .5em;
+  text-align: center;
+  color: white;
+  display: inline;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
