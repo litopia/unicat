@@ -1,4 +1,5 @@
        var video;
+       var localStream;
         var dataURL;
 
         //http://coderthoughts.blogspot.co.uk/2013/03/html5-video-fun.html - thanks :)
@@ -13,7 +14,13 @@
         function connect(stream) {
             video = document.getElementById("video");
             video.src = window.URL ? window.URL.createObjectURL(stream) : stream;
+            localStream = stream;
             video.play();
+        }
+
+        function disconnect() {
+          video.src = null;
+          localStream.stop();
         }
 
         function error(e) { console.log(e); }
@@ -43,6 +50,7 @@
             document.getElementById('preview').src = dataURL;
             // place the image value in the text box
             document.getElementById('preview').value = dataURL;
+            disconnect();
             hideCam();
         }
 
