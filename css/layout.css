@@ -19,9 +19,10 @@
 
 /* #Page Styles
 ================================================== */
+
 main {
 	background-color: #343434;
-	padding-top: 50px;
+	padding-top: 10%;
 	width: 100%;
 	height: auto;
 }
@@ -38,13 +39,9 @@ img {
 .content {
 	display: inline-flex;
 	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
 }
 
 .content-image {
-	width: 257px;
-	height: 257px;
 	overflow: hidden;
 }
 
@@ -56,21 +53,27 @@ img {
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen {
+		.content-image {
+			width: 16.667%;
+			height: 16.667%;
+		}
+
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		.content-image {
-			width: 192px;
-			height: 192px;
+			width: 20%;
+			height: 20%;
 		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		.content-image {
-			width: 152px;
-			height: 152px;
+			width: 33.333%;
+			height: 33.333%;
 		}
 	}
 
