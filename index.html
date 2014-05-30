@@ -21,8 +21,9 @@
         <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/modal.css">
         <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+        <!-- JS files -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- Import Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lato|Lobster' rel='stylesheet' type='text/css'>
     </head>
@@ -44,6 +45,8 @@
         <div id="cam-js" class="camera">
           <!-- VIDEO -->
           <video id="video" width="514" height="514" autoplay></video>
+          <!-- Alert Text -->
+          <p id="alert"> </p>
           <!-- BUTTON -->
           <button id="button" ><span class="icon-camera">&nbsp;</span></button>
 
@@ -238,9 +241,11 @@
 
         <script type="text/javascript">
           $(document).ready(function(){
-            console.log('onReady');
-            $("#takePictureField").on("change",gotPic);
-            desiredWidth = window.innerWidth;
+            if(!!navigator.webkitGetUserMedia){
+              console.log('onReady');
+              $("#takePictureField").on("change",gotPic);
+              desiredWidth = window.innerWidth;
+            }
 
                 if(!("url" in window) && ("webkitURL" in window)) {
                     window.URL = window.webkitURL;

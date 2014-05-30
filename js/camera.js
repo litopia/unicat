@@ -23,7 +23,9 @@
           localStream.stop();
         }
 
-        function error(e) { console.log(e); }
+        function error(e) {
+          console.log(e);
+        }
 
         var openCam = document.getElementById("open-cam");
         openCam.addEventListener("click", setup);
