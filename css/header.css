@@ -2,7 +2,7 @@ header {
 	width: 100%;
 	background-color: #313131;
 	z-index: 100;
-	padding: 5px;
+	padding: 10px;
 	position: absolute;
 }
 
@@ -19,6 +19,6 @@ h1 a.logo {
 .test {
 	text-decoration: none;
 	color: #fff;
-	font-size: 3em;
+	font-size: 2.0em;
 	display: inline;
 }

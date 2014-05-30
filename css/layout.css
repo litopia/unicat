@@ -20,11 +20,15 @@
 /* #Page Styles
 ================================================== */
 
+header {
+	position: fixed;
+	top: 0;
+	height: 5%;
+}
+
 main {
-  background-color: #343434;
-  padding-top: 10%;
-  width: 100%;
-  height: auto;
+	background-color: #343434;
+	width: 100%;
 }
 
 body {
@@ -37,12 +41,12 @@ img {
 }
 
 .content {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .content-image {
