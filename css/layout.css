@@ -20,15 +20,10 @@
 /* #Page Styles
 ================================================== */
 
-header {
-	position: fixed;
-	top: 0;
-	height: 5%;
-}
-
 main {
 	background-color: #343434;
 	width: 100%;
+	margin-top: 83px;
 }
 
 body {
