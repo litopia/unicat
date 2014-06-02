@@ -39,18 +39,19 @@ video {
 }
 
 #preview{
-  -webkit-animation:insertImg 500ms; /* Safari and Chrome */
+  -webkit-animation:insertImg 500ms;
   animation:insertImg 500ms;
 }
 
 @keyframes insertImg
 {
-  from{height:0;}
-  to{height: 100%;}
+  from{height:0; width: 0;}
+  to{height: 100%; width: 100%;}
 }
 
-@-webkit-keyframes insertImg /* Safari and Chrome */
+@-webkit-keyframes insertImg
 {
-  from{height:0;}
-  to{height: 100%;}
+  from{height:0; width: 0;}
+  to{height: 100%; width: 100%;}
 }
+
