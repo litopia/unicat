@@ -83,6 +83,17 @@ img {
 			width: 33.333%;
 			height: 33.333%;
 		}
+
+		footer {
+			width: 100%;
+			background-color: #343434;
+			text-align: center;
+			padding: 10px;
+			bottom: 0;
+			height: 5%;
+			position: absolute;
+			color: #FFFFFF;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
