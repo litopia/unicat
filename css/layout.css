@@ -20,15 +20,10 @@
 /* #Page Styles
 ================================================== */
 
-header {
-	position: fixed;
-	top: 0;
-	height: 5%;
-}
-
 main {
 	background-color: #343434;
 	width: 100%;
+	margin-top: 83px;
 }
 
 body {
@@ -70,6 +65,7 @@ img {
 
   }
 
+<<<<<<< HEAD
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     .content-image {
@@ -77,6 +73,26 @@ img {
       height: 20%;
     }
   }
+=======
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.content-image {
+			width: 33.333%;
+			height: 33.333%;
+		}
+
+		footer {
+			width: 100%;
+			background-color: #343434;
+			text-align: center;
+			padding: 10px;
+			bottom: 0;
+			height: 5%;
+			position: absolute;
+			color: #FFFFFF;
+		}
+	}
+>>>>>>> 33c2a8f293a1e68580d27e7ee37174a5edcd4621
 
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {

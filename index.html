@@ -55,12 +55,9 @@
           <p class="offset-by-two twelve columns">
             But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
           </p>
-          <form action="upload.htm" method="post" enctype="multipart/form-data">
-            <input type="file" accept="image/*" capture>
-            <input type="submit" value="Upload">
-          </form>
+          <!-- TAKE PHOTO -->
           <button id="open-cam" class="enable-camera"><span class="icon-camera">&nbsp;</span>Take Photo</button>
-          <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+          <!-- BROWSE -->
           <button class="hide-modal">Skip to Browse</button>
           <menu class="hide-modal icon-circle-cross"></menu>
         </section>
@@ -231,7 +228,7 @@
 
         <script>
           $(document).ready(function(){
-            $('.test').click(function(){
+            $('.`test`').click(function(){
               $( '.camera' ).toggleClass( 'show' );
             });
           });
