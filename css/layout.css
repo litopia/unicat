@@ -49,6 +49,7 @@ img {
 
 .test {
 	display: inline-block;
+	margin-left: 28%;
 }
 
 /* #Media Queries
@@ -78,6 +79,24 @@ img {
 			height: 33.333%;
 		}
 
+		header div.container {
+			margin: 0;
+			padding: 0;
+		}
+
+		header div.container a {
+			margin: 0;
+			padding: 0;
+		}
+
+		.test {
+			display: inline;
+			margin: 0;
+		}
+
+		main {
+			margin-top: 20%;
+
 		footer {
 			width: 100%;
 			background-color: #343434;
@@ -87,6 +106,7 @@ img {
 			height: 5%;
 			position: absolute;
 			color: #FFFFFF;
+
 		}
 	}
 
