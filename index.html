@@ -22,8 +22,9 @@
         <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/modal.css">
         <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+        <!-- JS files -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- Import Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lato|Lobster' rel='stylesheet' type='text/css'>
     </head>
@@ -35,7 +36,10 @@
               Glimpse
             </a></h1>
 
-            <a id="cam-toggle" class="test offset-by-four one column" href="#"><span class="icon-camera" hidden>&nbsp;</span></a>
+            <a id="cam-toggle" class="test offset-by-four one column" href="#"><span class="icon-camera">&nbsp;</span></a>
+            <!--Alternative for safari and iOS devices to upload and add picture -->
+            <input type="file" capture="camera" accept="image/*" id="takePictureField" style="display:none">
+            <input class="icon-camera offset-by-four one column" type="button" value="Browse..." onclick="document.getElementById('takePictureField').click();">
           </div>
         </header>
 
@@ -43,8 +47,11 @@
         <div id="cam-js" class="camera">
           <!-- VIDEO -->
           <video id="video" width="514" height="514" autoplay></video>
+          <!-- Alert Text -->
+          <p id="alert"> </p>
           <!-- BUTTON -->
           <button id="button" ><span class="icon-camera">&nbsp;</span></button>
+
         </div>
 
         <!-- WELCOME -->
@@ -225,15 +232,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <script>
-          $(document).ready(function(){
-            $('.`test`').click(function(){
-              $( '.camera' ).toggleClass( 'show' );
-            });
-          });
-        </script>
-
         <script src="js/camera.js"></script>
 
     </body>

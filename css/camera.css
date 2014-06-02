@@ -51,12 +51,13 @@ video {
 
 @keyframes insertImg
 {
-  from{height:0;}
-  to{height: 30%;}
+  from{height:0; width: 0;}
+  to{height: auto; width: 100%;}
 }
 
-@-webkit-keyframes insertImg (/* Safari and Chrome */)
+@-webkit-keyframes insertImg
 {
-  from{height:0;}
-  to{height: 30%;}
+  from{height:0; width: 0;}
+  to{height: auto; width: 100%;}
 }
+
