@@ -97,6 +97,17 @@ img {
 
 		main {
 			margin-top: 20%;
+
+		footer {
+			width: 100%;
+			background-color: #343434;
+			text-align: center;
+			padding: 10px;
+			bottom: 0;
+			height: 5%;
+			position: absolute;
+			color: #FFFFFF;
+
 		}
 	}
 
