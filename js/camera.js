@@ -1,6 +1,6 @@
        var video;
        var localStream;
-        var dataURL;
+       var dataURL;
 
         //http://coderthoughts.blogspot.co.uk/2013/03/html5-video-fun.html - thanks :)
         function setup() {
@@ -56,18 +56,18 @@
             hideCam();
         }
 
-        function appendImg(){
-          var main = document.getElementById('main');
-          var newImg = document.createElement('figure');
-          var canvasHolder = document.createElement('div')
-          var preview = document.createElement('img');
-          newImg.className="content-image";
-          canvasHolder.id = "canvasHolder";
-          preview.id = "preview";
-          newImg.appendChild(canvasHolder);
-          newImg.appendChild(preview);
-          main.insertBefore(newImg, main.firstChild);
-        }
+        // function appendImg(){
+        //   var main = document.getElementById('main');
+        //   var newImg = document.createElement('figure');
+        //   var canvasHolder = document.createElement('div')
+        //   var preview = document.createElement('img');
+        //   newImg.className="content-image";
+        //   canvasHolder.id = "canvasHolder";
+        //   preview.id = "preview";
+        //   newImg.appendChild(canvasHolder);
+        //   newImg.appendChild(preview);
+        //   main.insertBefore(newImg, main.firstChild);
+        // }
 
         function hideCam(){
           var cam = document.getElementById('cam-js');

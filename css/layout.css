@@ -23,7 +23,6 @@
 main {
 	background-color: #343434;
 	width: 100%;
-	margin-top: 83px;
 }
 
 body {
@@ -49,7 +48,8 @@ img {
 }
 
 .test {
-  display: inline-block;
+	display: inline-block;
+	margin-left: 28%;
 }
 
 /* #Media Queries
@@ -80,6 +80,25 @@ img {
 			width: 33.333%;
 			height: 33.333%;
 		}
+
+		header div.container {
+			margin: 0;
+			padding: 0;
+		}
+
+		header div.container a {
+			margin: 0;
+			padding: 0;
+		}
+
+		.test {
+			display: inline;
+			margin: 0;
+		}
+
+		main {
+			margin-top: 20%;
+}
 
 		footer {
 			width: 100%;

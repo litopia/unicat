@@ -1,0 +1,17 @@
+// Mixin to further customize the button css properties
+// -------------------------------------------------------
+
+@mixin buttoncss($btn-color){
+  @each $btn-color, $color in $btn-color{
+    &-#{$btn-color}{
+      background-color: $color;    //Define background color
+      @if $btn-color == green{    //If the button color is green (for camera panel), change width and padding.
+        width: 100%;
+        padding: 0.5em 0.328em;
+      }
+    }
+  }
+}
+
+
+

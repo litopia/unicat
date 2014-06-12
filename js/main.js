@@ -44,19 +44,19 @@ $('.test').click(function(){
 function checkStreamAPI(){
   if(!!navigator.webkitGetUserMedia){
     console.log('webcamOnReady');
-    $("input").css("display", "none");
+    $("input").hide();
   }else{
     console.log("webcamError");
-    $("#cam-toggle").css("display", "none");
-    $('#welcome').css("display", "none");
+    $("#cam-toggle").hide();
+    $('#welcome').hide();
   }
 }
-//To prepend image when uploading picture.
-function prependImg(){
+//To prepend image element when uploading picture.
+var prependImg = function(){
   $("#main").prepend("<figure class='content-image'><img id='preview'></figure>");
 }
 
-function gotPic(event) {
+var gotPic = function(event) {
   prependImg();
   if(event.target.files.length == 1 &&
      event.target.files[0].type.indexOf("image/") == 0) {

@@ -1,0 +1,16 @@
+.button {
+  padding: 1em 0.328em;
+  color: white;
+  border: none;
+  border-radius: 0.618em;
+  margin: 0 auto;
+  width: 11.09em; }
+
+.button-red {
+  background-color: #dc3522; }
+.button-green {
+  background-color: green;
+  width: 100%;
+  padding: 0.5em 0.328em; }
+.button-gray {
+  background-color: #374140; }
